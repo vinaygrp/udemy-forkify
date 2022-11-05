@@ -140,6 +140,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('NEW FEATURE: WELCOME TO THE APPLICATION');
+};
+
 // EVENT LISTENERS
 const init = function () {
   // Publisher-Subscriber link
@@ -153,6 +157,6 @@ const init = function () {
   searchView.addHandlerRender(controlSearchResults);
   paginationView.addHandlerRender(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Welcome');
+  newFeature();
 };
 init();
